@@ -9,7 +9,7 @@
 
 body {
     height: 100vh;
-    background: url(/Pics/steve-johnson-EXwBz2ZK0S0-unsplash.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Pics/steve-johnson-EXwBz2ZK0S0-unsplash.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -41,8 +41,29 @@ header .navbar {
 
 .navbar .menu-links {
     display: flex;
-    gap: 40px;
+    gap: 1px;
     list-style: none;
+}
+
+.navbar ul li {
+    list-style: none;
+    display:inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li::after {
+    content:'';
+    width: 0;
+    height: 2px;
+    background: rgb(18, 226, 88);
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
 }
 
 .navbar a {
