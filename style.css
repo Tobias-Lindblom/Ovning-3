@@ -43,11 +43,6 @@ header .navbar {
     color:rgb(18, 226, 88);
 }
 
-.navbar .menu-links {
-    display: flex;
-    gap: 1px;
-}
-
 .navbar ul li {
     list-style: none;
     display:inline-block;
