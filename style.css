@@ -15,11 +15,11 @@ body {
 }
 
 header {
-    position:fixed
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
 }
 
 header .navbar {
@@ -33,8 +33,12 @@ header .navbar {
 .navbar .logo {
     font-size: 2.3rem;
     font-weight: 600;
+    transition: 0.3s ease;
 }
 
+.logo:hover {
+    transform: scale(1.1);
+}
 .navbar .logo span {
     color:rgb(18, 226, 88);
 }
@@ -42,7 +46,6 @@ header .navbar {
 .navbar .menu-links {
     display: flex;
     gap: 1px;
-    list-style: none;
 }
 
 .navbar ul li {
@@ -59,7 +62,7 @@ header .navbar {
     background: rgb(18, 226, 88);
     display: block;
     margin:auto;
-    transition: 0.5s;
+    transition: 0.3s ease;
 }
 
 .navbar ul li:hover::after {
@@ -70,3 +73,77 @@ header .navbar {
     color: #fff;
     text-decoration: none;
 }
+
+.hero-section {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-section .content {
+    color: #fff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-section .content h1 {
+    font-size: 3rem;
+    max-width: 600px;
+}
+
+.hero-section .content p {
+    font-weight: 300px;
+    margin-top: 1px;
+    max-width: 500px;
+}
+
+.hero-section .content span {
+    color: rgb(18, 226, 88)
+}
+
+figure {
+    position: absolute;
+    top: 480px;
+    left: 335px;
+    width: 100%;
+    padding: 20px;
+}
+
+.media {
+    color: #fff;
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.media ul li {
+    list-style: none;
+    display:inline-block;
+    margin: 0 1px;
+    position: relative;
+    transition: 0.2s ease;
+}
+.figure .bx {
+    top: 0;
+    bottom: 0;
+}
+.bx:hover {
+    transform: scale(1.4);
+}
+
+.media-links a {
+    color:rgb(18, 226, 88);
+}
+
+
+
+
+
+
+
+
+
+
+
