@@ -68,3 +68,17 @@ header .navbar {
     color: #fff;
     text-decoration: none;
 }
+
+.hero-section {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-section .content {
+    color: #fff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
